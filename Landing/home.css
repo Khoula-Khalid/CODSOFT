@@ -1,0 +1,58 @@
+.home-section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: -4rem; 
+}
+.home-name{
+    color: var(--secondary-white);
+}
+.home-description{
+    font-weight: 100;
+    margin-top: 1.3rem;
+    font-size: var(--text-l);
+    width: 50rem;
+    text-align: center;
+    color: var(--secondary-white);
+}
+.home-About{
+    margin-top: 2.5rem;
+}
+.abu-link {
+    text-decoration: none;
+    padding: 0.8rem 2.8rem;
+    border-radius: 1.5rem;
+    background: linear-gradient(to right, #02b2eb, #1d4b9a);
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.abu-link:hover{
+    color: #fff;
+    background: linear-gradient(to bottom, #02b2eb, #1d4b9a);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 500ms;
+}
+
+@media (min-width: 640px) {
+    .home-name {
+        font-size: var(--text-5xl)
+    }
+
+    .home-subtitle {
+        font-size: var(--text-4xl)
+    }
+}
+
+@media (min-width: 768px) {
+    .home-name {
+        font-size: var(--text-7xl)
+    }
+
+    .home-subtitle {
+        font-size: var(--text-5xl)
+    }
+}
