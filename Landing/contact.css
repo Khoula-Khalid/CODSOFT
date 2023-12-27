@@ -1,0 +1,50 @@
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    height: 91vh;
+    position: relative;
+    overflow: hidden;
+}
+.background-container {
+    height: 91vh;
+    display: grid;
+    overflow: hidden;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(to bottom, #02b1ebee, #1d4b9abd);
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Do not repeat the background */
+    background-size: cover; /* Cover the entire container */
+}
+.contact-details-container {
+    display: flex;
+    color: black;
+    padding: 4rem;
+    box-sizing: border-box;
+    flex: 1;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.card {
+    flex: 1;
+    height: 55vh;
+    width: 400px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 4rem;
+}
+.hours-card h3 {
+    font-size: 30px;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.hours-card p{
+    position: relative;
+    font-size: 18px;
+    font-weight: 10;
+    color: rgba(0, 0, 0, 0.726);
+    margin-top: 1rem;
+}

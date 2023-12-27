@@ -1,0 +1,71 @@
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    height: 60px;
+    backdrop-filter: blur(50px);
+    background: linear-gradient(#1d4b9aa8, #02b1eba1);
+}
+.footer-socials{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.45rem;
+}
+.footer-socials > * + * {
+    margin-left: 1.5rem;
+}
+.card__links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    --transform-animation: translateY(-10px);
+    /*Backgrounds - Social Media Hover */
+    --bg-facebook: blue;
+    --bg-instagram: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    --bg-linkedin: rgb(30, 48, 131);
+  }
+    
+  .card__links svg {
+    height: 36px;
+    width: 36px;
+    padding: 6px;
+    background-color: rgba(128, 128, 128, 0.211);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background .3s ease,
+                transform .2s ease;
+  }
+  
+  .card__links svg:hover {
+    transform: var(--transform-animation);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+  }
+  
+  /* Hover Colors */
+  .card__links a:nth-child(1) svg:hover {
+    background: var(--bg-facebook);
+}
+
+.card__links a:nth-child(2) svg:hover {
+    background: var(--bg-instagram);
+}
+
+.card__links a:nth-child(3) svg:hover {
+    background: var(--bg-linkedin);
+}
+.small{
+    margin-left: 0.5rem;
+    font-size: 14px;
+    margin-top: 0.3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.lin{
+    font-size: 23px;
+    margin-top: 0;
+    font-weight: 600;
+    margin-left: 1rem;
+}
