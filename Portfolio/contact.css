@@ -1,0 +1,71 @@
+.contact-me {
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #202020;
+    padding-top: 5rem;
+    padding-left: 8rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+}
+.contact-content > h3{
+    font-weight: 400;
+    color: #ff0000;
+    margin-bottom: 1.5rem;
+}
+.contact-content > p{
+    font-size: 45px;
+    line-height: 1.5;
+    color: white;
+    font-size: 18px;
+}
+.buttons{
+    display: flex;
+    gap: 1rem;
+}
+.contact-cta {
+    margin-top: 3rem;
+    justify-content: center; /* Add this line to center the buttons */
+}
+
+.contact-cta > a {
+    text-decoration: none;
+    color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.2rem;
+}
+.contact-cta > a:hover{
+    text-decoration: none;
+    color: #202020;
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    border-radius: 0.4rem;
+    padding: 0.6rem 1.2rem;
+}
+.icon{
+    height: 1.25rem;
+    width: 1.3rem;
+    color: #ff0000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.4rem;
+    transition: transform 0.5s ease;
+}
+.contact-cta > a:hover .icon {
+    color: #000000; 
+    transform: scale(1.1); 
+}
+@media (min-width: 640px) {
+    .contact-content > h3 {
+        font-size: 2rem; 
+    }
+}
+
+@media (min-width: 768px) {
+    .contact-content > h3 {
+        font-size: 3rem; 
+    }
+}

@@ -1,0 +1,86 @@
+.Project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 100px;
+    background: #171717;
+}
+  
+.Project h1 {
+    font-size: 52px;
+    font-weight: 600;
+    color: #fbfbfb;
+    font-family: "Libre Baskerville", serif;
+}
+  
+.Project-cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 70px;
+    gap: 2.5vh;
+}
+  
+.Project-card {
+    position: relative;
+    height: 30vw;
+    width: 36vw;
+    background-color: #3d3e42;
+    border-radius: 10px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vh;
+    transition: all ease 0.5s;
+    margin-bottom: 20px;
+}
+  
+.Project-card img {
+    position: relative;
+    object-fit: cover;
+}
+  
+.Project-card .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    height: 30vw;
+    width: 36vw;
+    background-color: #34353be3;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+  
+  .Project-card .overlay h3 {
+    color: #fbfbfb;
+    font-size: 20px;
+  }
+  
+.Project-card .overlay p {
+    color: #fbfbfb;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .Project-card .overlay a button {
+    height: 28px;
+    width: 120px;
+    background-color: #f70303;
+    border: none;
+    border-radius: 7px;
+    color: rgb(3, 2, 2);
+    font-size: 16px;
+    font-weight: 350;
+    transition: all ease 0.5s;
+    cursor: pointer;
+  }
+  .Project-card .overlay:hover{
+    opacity: 1;
+  }

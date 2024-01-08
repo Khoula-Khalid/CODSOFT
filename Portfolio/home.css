@@ -1,0 +1,112 @@
+
+/*Landing Page*/
+.landing {
+    display: flex;
+    height: 90vh;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(background.jpg);
+    background-size: cover;
+    margin-top: 50px;
+  }
+  
+  .landing .intro {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+  }
+  
+  .landing .intro h3 {
+    color: #fbfbfb;
+    font-weight: 400;
+    font-size: 38px;
+    margin-left: 10vw;
+  }
+  
+  .landing .intro h3 span {
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 4rem;
+  }
+  
+  .intro button{
+    height: 48px;
+    width: 140px;
+    margin-top: 2.5vh;
+    margin-left: 10vw;
+    background-color: transparent;
+    border: 2px solid #f11616;
+    border-radius: 8px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+  }
+  .intro button a{
+    color: #ff0101;
+    font-size: 19px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .intro button:hover a{
+    color: #34353b;
+  }
+  .intro button:hover {
+    background-color: #ff0000e7;
+  }
+/*Social Buttons*/
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10vh;
+    margin-right: 7.5vw;
+  }
+  
+  .socials .line {
+    background-color: #b4afaf;
+    height: 25vh;
+    width: 3px;
+    margin-bottom: 1.2rem;
+  }
+  
+.card__links {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    --transform-animation: translateY(-10px);
+    /*Backgrounds - Social Media Hover */
+    --bg-facebook: blue;
+    --bg-instagram: linear-gradient(to right, #8a2387, #e94057, #f27121);
+    --bg-linkedin: rgb(30, 48, 131);
+  }
+    
+  .card__links svg {
+    height: 37px;
+    width: 37px;
+    padding: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background .3s ease,
+                transform .2s ease;
+  }
+  
+  .card__links svg:hover {
+    transform: var(--transform-animation);
+  }
+  
+  /* Hover Colors */
+  .card__links a:nth-child(1) svg {
+    background: var(--bg-facebook);
+}
+
+.card__links a:nth-child(2) svg {
+    background: var(--bg-instagram);
+}
+
+.card__links a:nth-child(3) svg {
+    background: var(--bg-linkedin);
+}

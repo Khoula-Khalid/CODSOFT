@@ -1,0 +1,64 @@
+.skills {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 100px;
+  background: rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(5px);
+}
+
+.skills h1 {
+  font-size: 53px;
+  font-weight: 600;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 15vw;
+  width: 15vw;
+  background: linear-gradient(to right, rgba(128, 128, 128, 0.274) , rgba(190, 190, 190, 0.288));
+  box-shadow: 0 0 10px 0 rgba(51, 43, 43, 0.856);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: background .3s ease,
+  transform .2s ease;
+  cursor: pointer;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 10px 0 rgba(240, 5, 5, 0.911);
+}
+
+.skill-card img {
+  height: 6vw;
+  width: 6vw;
+  object-fit: contain;
+}
+.skill-card h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+.span{
+  color: #ff0000;
+}
